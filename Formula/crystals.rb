@@ -2,7 +2,7 @@ class Crystals < Formula
   desc "Crystal-native Grax routing and receipt contract assets"
   homepage "https://github.com/ollama/ollama"
   license "MIT"
-  head "https://github.com/ollama/ollama.git", branch: "main"
+  head "https://github.com/thebreathwright/homebrew-crystals.git", branch: "main"
 
   def install
     pkgshare.install "docs/crystals_package.md"
