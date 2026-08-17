@@ -11,10 +11,12 @@ class Crystals < Formula
     pkgshare.install "server/grax_consequence_contract.go"
   end
 
-  caveats <<~EOS
-    Crystals installs contract and routing source files only.
-    It is intended to be consumed alongside the brullama CLI and grax contract package.
-  EOS
+  def caveats
+    <<~EOS
+      Crystals installs contract and routing source files only.
+      It is intended to be consumed alongside the brullama CLI and grax contract package.
+    EOS
+  end
 
   test do
     assert_predicate pkgshare/"docs/crystals_package.md", :exist?
